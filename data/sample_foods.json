@@ -1,0 +1,120 @@
+{
+  "foods": [
+    {
+      "id": "meal-poha-spinach",
+      "slot": "breakfast",
+      "name": "Homestyle Spinach & Onion Poha",
+      "description": "Fluffy flattened rice tempered with cumin, turmeric, green chili, diced potatoes, and fresh wilted spinach.",
+      "cooking_time_minutes": 15,
+      "estimated_cost": 25,
+      "dietary_tags": ["Vegetarian", "Nut-Free", "Low-Spice"],
+      "ingredients": [
+        { "name": "Poha (Flattened rice)", "quantity": "1 cup", "estimated_cost": 10, "in_pantry": false },
+        { "name": "Potato", "quantity": "1 medium", "estimated_cost": 5, "in_pantry": true },
+        { "name": "Onion", "quantity": "1 small", "estimated_cost": 4, "in_pantry": true },
+        { "name": "Spinach", "quantity": "1 handful chopped", "estimated_cost": 4, "in_pantry": true },
+        { "name": "Turmeric & Cumin", "quantity": "1/2 tsp", "estimated_cost": 2, "in_pantry": true }
+      ],
+      "steps": [
+        "Rinse poha in a colander until softened, then drain well.",
+        "Heat 1 tsp oil in a pan, temper cumin seeds, add finely chopped onions and diced potato.",
+        "Cover and cook on low heat until potato cubes are tender (about 6 minutes).",
+        "Add chopped spinach and turmeric powder; stir for 1 minute until wilted.",
+        "Fold in the softened poha, gently mix with salt to taste, and steam covered for 2 minutes."
+      ],
+      "nutrition": {
+        "calories": 280,
+        "protein_g": 6,
+        "carbs_g": 48,
+        "fat_g": 6
+      },
+      "why_recommended": "Uses potato, onion, and spinach from your pantry; ready in 15 minutes; well within morning ₹35 budget."
+    },
+    {
+      "id": "meal-dal-tadka-rice",
+      "slot": "lunch",
+      "name": "Comforting Dal Tadka with Steamed Rice",
+      "description": "Hearty yellow lentils simmered with turmeric and garlic-free cumin-tomato tadka, served over fluffy steamed rice.",
+      "cooking_time_minutes": 25,
+      "estimated_cost": 42,
+      "dietary_tags": ["Vegetarian", "Nut-Free", "Comfort-Food"],
+      "ingredients": [
+        { "name": "Dal (Lentils)", "quantity": "1/2 cup dry", "estimated_cost": 15, "in_pantry": true },
+        { "name": "Rice", "quantity": "1 cup cooked", "estimated_cost": 12, "in_pantry": true },
+        { "name": "Tomato", "quantity": "1 medium chopped", "estimated_cost": 6, "in_pantry": true },
+        { "name": "Onion", "quantity": "1 small chopped", "estimated_cost": 4, "in_pantry": true },
+        { "name": "Cumin & Ghee", "quantity": "1 tsp", "estimated_cost": 5, "in_pantry": true }
+      ],
+      "steps": [
+        "Pressure cook dal with 1.5 cups water, turmeric, and salt for 3 whistles (or simmer 20 mins).",
+        "In another pot, steam the rice until fluffy.",
+        "Heat ghee in a small pan, add cumin seeds until fragrant, then saute onions until translucent.",
+        "Add chopped tomatoes and cook until soft and pulpy.",
+        "Pour the tempering into the boiled dal, bring to a gentle boil, and serve warm with rice."
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein_g": 14,
+        "carbs_g": 72,
+        "fat_g": 8
+      },
+      "why_recommended": "100% pantry-aligned lunch; high protein from lentils; zero nut exposure; under ₹50 lunch target."
+    },
+    {
+      "id": "meal-curd-cucumber-snack",
+      "slot": "snack",
+      "name": "Spiced Curd Dip with Roasted Cumin",
+      "description": "Cool, probiotic-rich fresh curd whipped with roasted cumin powder, mild black salt, and coriander.",
+      "cooking_time_minutes": 5,
+      "estimated_cost": 15,
+      "dietary_tags": ["Vegetarian", "Nut-Free", "Quick", "Probiotic"],
+      "ingredients": [
+        { "name": "Curd", "quantity": "1 cup", "estimated_cost": 12, "in_pantry": true },
+        { "name": "Roasted Cumin Powder", "quantity": "1/2 tsp", "estimated_cost": 1, "in_pantry": true },
+        { "name": "Black Salt & Herbs", "quantity": "pinch", "estimated_cost": 2, "in_pantry": true }
+      ],
+      "steps": [
+        "Whisk curd in a bowl until smooth and silky.",
+        "Sprinkle freshly roasted cumin powder, a pinch of black salt, and mild chili powder if desired.",
+        "Garnish with chopped fresh coriander and enjoy chilled."
+      ],
+      "nutrition": {
+        "calories": 140,
+        "protein_g": 7,
+        "carbs_g": 8,
+        "fat_g": 8
+      },
+      "why_recommended": "Instant 5-minute snack utilizing fresh curd from your pantry; refreshing, gut-healthy, and costs only ₹15."
+    },
+    {
+      "id": "meal-aloo-palak-roti",
+      "slot": "dinner",
+      "name": "Savory Aloo Palak Sabzi with Phulka",
+      "description": "Tender golden potatoes stewed with a vibrant fresh spinach puree and mild Indian spices, paired with soft rotis.",
+      "cooking_time_minutes": 25,
+      "estimated_cost": 38,
+      "dietary_tags": ["Vegetarian", "Nut-Free", "Iron-Rich"],
+      "ingredients": [
+        { "name": "Potato", "quantity": "2 medium diced", "estimated_cost": 10, "in_pantry": true },
+        { "name": "Spinach", "quantity": "1 bunch blanched & pureed", "estimated_cost": 12, "in_pantry": true },
+        { "name": "Tomato", "quantity": "1 pureed", "estimated_cost": 5, "in_pantry": true },
+        { "name": "Onion", "quantity": "1 small chopped", "estimated_cost": 4, "in_pantry": true },
+        { "name": "Atta (Wheat flour for 2 rotis)", "quantity": "60g", "estimated_cost": 7, "in_pantry": false }
+      ],
+      "steps": [
+        "Blanch spinach leaves in boiling water for 2 minutes, then plunge in cold water and blend smooth.",
+        "Pan-sear diced potatoes in 1 tsp oil until light golden; set aside.",
+        "In the same pan, saute onions and tomato puree with ground coriander and mild turmeric.",
+        "Fold in the spinach gravy and potatoes; simmer on low heat for 8 minutes until potatoes are fork-tender.",
+        "Knead atta into dough, roll out thin phulkas, and puff over open flame."
+      ],
+      "nutrition": {
+        "calories": 360,
+        "protein_g": 10,
+        "carbs_g": 62,
+        "fat_g": 7
+      },
+      "why_recommended": "Uses potato, spinach, tomato, and onion from pantry; iron-rich; dinner cost ₹38 stays well within ₹45 cap."
+    }
+  ]
+}

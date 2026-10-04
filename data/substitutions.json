@@ -1,0 +1,234 @@
+{
+  "substitutions": {
+    "peanut butter": [
+      {
+        "substitute": "sunflower seed butter",
+        "category": "seed_butter",
+        "flavor_profile": "nutty, creamy",
+        "cost_multiplier": 1.1,
+        "allergens": []
+      },
+      {
+        "substitute": "soy nut butter",
+        "category": "legume_butter",
+        "flavor_profile": "rich, roasted",
+        "cost_multiplier": 1.0,
+        "allergens": ["SOY"]
+      },
+      {
+        "substitute": "tahini",
+        "category": "seed_paste",
+        "flavor_profile": "earthy, savory",
+        "cost_multiplier": 1.2,
+        "allergens": ["SESAME"]
+      }
+    ],
+    "peanut": [
+      {
+        "substitute": "roasted sunflower seeds",
+        "category": "seeds",
+        "flavor_profile": "crunchy, nutty",
+        "cost_multiplier": 0.9,
+        "allergens": []
+      },
+      {
+        "substitute": "roasted chickpeas",
+        "category": "legumes",
+        "flavor_profile": "crunchy, earthy",
+        "cost_multiplier": 0.8,
+        "allergens": []
+      },
+      {
+        "substitute": "pumpkin seeds",
+        "category": "seeds",
+        "flavor_profile": "crisp, mild",
+        "cost_multiplier": 1.1,
+        "allergens": []
+      }
+    ],
+    "peanuts": [
+      {
+        "substitute": "roasted sunflower seeds",
+        "category": "seeds",
+        "flavor_profile": "crunchy, nutty",
+        "cost_multiplier": 0.9,
+        "allergens": []
+      },
+      {
+        "substitute": "roasted chickpeas",
+        "category": "legumes",
+        "flavor_profile": "crunchy, earthy",
+        "cost_multiplier": 0.8,
+        "allergens": []
+      },
+      {
+        "substitute": "pumpkin seeds",
+        "category": "seeds",
+        "flavor_profile": "crisp, mild",
+        "cost_multiplier": 1.1,
+        "allergens": []
+      }
+    ],
+    "peanut oil": [
+      {
+        "substitute": "sunflower oil",
+        "category": "oil",
+        "flavor_profile": "neutral, high smoke point",
+        "cost_multiplier": 0.9,
+        "allergens": []
+      },
+      {
+        "substitute": "mustard oil",
+        "category": "oil",
+        "flavor_profile": "pungent, traditional Indian",
+        "cost_multiplier": 1.0,
+        "allergens": ["MUSTARD"]
+      },
+      {
+        "substitute": "sesame oil",
+        "category": "oil",
+        "flavor_profile": "aromatic",
+        "cost_multiplier": 1.3,
+        "allergens": ["SESAME"]
+      }
+    ],
+    "cashew": [
+      {
+        "substitute": "roasted pumpkin seeds",
+        "category": "seeds",
+        "flavor_profile": "mild, creamy when ground",
+        "cost_multiplier": 0.8,
+        "allergens": []
+      },
+      {
+        "substitute": "melon seeds",
+        "category": "seeds",
+        "flavor_profile": "neutral, thickens gravies like cashew",
+        "cost_multiplier": 0.7,
+        "allergens": []
+      },
+      {
+        "substitute": "curd / yogurt",
+        "category": "dairy",
+        "flavor_profile": "tangy, thickens curries",
+        "cost_multiplier": 0.6,
+        "allergens": ["MILK"]
+      }
+    ],
+    "almond": [
+      {
+        "substitute": "melon seeds",
+        "category": "seeds",
+        "flavor_profile": "smooth paste for gravies",
+        "cost_multiplier": 0.7,
+        "allergens": []
+      },
+      {
+        "substitute": "sunflower seeds",
+        "category": "seeds",
+        "flavor_profile": "nutty, versatile",
+        "cost_multiplier": 0.8,
+        "allergens": []
+      },
+      {
+        "substitute": "oats powder",
+        "category": "grain",
+        "flavor_profile": "neutral thickener",
+        "cost_multiplier": 0.5,
+        "allergens": []
+      }
+    ],
+    "cow milk": [
+      {
+        "substitute": "oat milk",
+        "category": "plant_milk",
+        "flavor_profile": "mildly sweet, creamy",
+        "cost_multiplier": 1.2,
+        "allergens": []
+      },
+      {
+        "substitute": "soy milk",
+        "category": "plant_milk",
+        "flavor_profile": "creamy, protein-rich",
+        "cost_multiplier": 1.0,
+        "allergens": ["SOY"]
+      },
+      {
+        "substitute": "almond milk",
+        "category": "nut_milk",
+        "flavor_profile": "nutty, light",
+        "cost_multiplier": 1.3,
+        "allergens": ["TREE_NUT"]
+      }
+    ],
+    "paneer": [
+      {
+        "substitute": "tofu",
+        "category": "soy_protein",
+        "flavor_profile": "absorbs curries, firm",
+        "cost_multiplier": 0.9,
+        "allergens": ["SOY"]
+      },
+      {
+        "substitute": "potato cubes",
+        "category": "vegetable",
+        "flavor_profile": "hearty, classic curry base",
+        "cost_multiplier": 0.4,
+        "allergens": []
+      },
+      {
+        "substitute": "mushrooms",
+        "category": "fungi",
+        "flavor_profile": "umami, tender",
+        "cost_multiplier": 1.0,
+        "allergens": []
+      }
+    ],
+    "wheat flour": [
+      {
+        "substitute": "jowar flour",
+        "category": "millet_flour",
+        "flavor_profile": "gluten-free Indian flatbreads",
+        "cost_multiplier": 1.1,
+        "allergens": []
+      },
+      {
+        "substitute": "bajra flour",
+        "category": "millet_flour",
+        "flavor_profile": "earthy, rustic",
+        "cost_multiplier": 1.0,
+        "allergens": []
+      },
+      {
+        "substitute": "rice flour",
+        "category": "grain_flour",
+        "flavor_profile": "crisp, light",
+        "cost_multiplier": 0.9,
+        "allergens": []
+      }
+    ],
+    "egg": [
+      {
+        "substitute": "besan / gram flour batter",
+        "category": "legume",
+        "flavor_profile": "savory, binds well",
+        "cost_multiplier": 0.6,
+        "allergens": []
+      },
+      {
+        "substitute": "flaxseed meal with water",
+        "category": "seed",
+        "flavor_profile": "binding agent",
+        "cost_multiplier": 1.0,
+        "allergens": []
+      },
+      {
+        "substitute": "curd / dahi",
+        "category": "dairy",
+        "flavor_profile": "moisture, tenderizer in baking",
+        "cost_multiplier": 0.7,
+        "allergens": ["MILK"]
+      }
+    ]
+  }
+}
