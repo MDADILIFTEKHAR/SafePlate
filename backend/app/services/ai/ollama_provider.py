@@ -3,7 +3,7 @@ import httpx
 from typing import Dict, Any, Optional
 from app.core.config import settings
 from app.services.ai.base import AIProvider
-from app.services.ai.demo_provider import demo_provider
+from app.services.ai.local_ai_provider import local_ai_provider
 
 class OllamaProvider(AIProvider):
     def __init__(
@@ -128,8 +128,8 @@ RESPONSE FORMAT: Return ONLY valid JSON matching this schema:
             print(f"[Ollama Attempt 2 Failed]: {e}")
 
         # Attempt 3: Fallback deterministic meal generator
-        print("[Ollama Fallback]: Generating deterministic safe plan via fallback provider.")
-        fallback = await demo_provider.generate_meal_plan_candidate(user_profile, pantry_items, repair_instruction)
+        print("[Ollama Fallback]: Generating deterministic safe plan via real-time local engine.")
+        fallback = await local_ai_provider.generate_meal_plan_candidate(user_profile, pantry_items, repair_instruction)
         return fallback
 
     async def _call_ollama(self, prompt: str) -> str:

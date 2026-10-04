@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
@@ -10,8 +11,8 @@ class Settings(BaseSettings):
     VERSION: str = "1.0.0"
     ENVIRONMENT: str = "development"
     
-    # AI Provider & Demo Mode
-    DEMO_MODE: bool = True
+    # AI Provider & Real-Time Engine
+    DEMO_MODE: bool = False
     MODEL_PROVIDER: str = "ollama"
     MODEL_NAME: str = "llama3.2:3b"
     OLLAMA_BASE_URL: str = "http://localhost:11434"
@@ -34,6 +35,19 @@ class Settings(BaseSettings):
         "http://127.0.0.1:3000",
     ]
     
+    @field_validator("CORS_ORIGINS", mode="before")
+    @classmethod
+    def assemble_cors_origins(cls, v):
+        if isinstance(v, str):
+            if v.startswith("[") and v.endswith("]"):
+                import json
+                try:
+                    return json.loads(v)
+                except Exception:
+                    pass
+            return [x.strip() for x in v.split(",") if x.strip()]
+        return v
+
     DATA_PATH: Path = DATA_DIR
 
     model_config = SettingsConfigDict(

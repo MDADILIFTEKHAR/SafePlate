@@ -28,7 +28,7 @@ export default function App() {
   const loadData = async () => {
     try {
       const [hData, pData, mData] = await Promise.all([
-        api.getHealth().catch(e => ({ status: 'error', demo_mode: true, ollama_available: false })),
+        api.getHealth().catch(e => ({ status: 'error', realtime: true, ollama_available: false })),
         api.getProfile().catch(e => null),
         api.getMealPlan().catch(e => null)
       ]);

@@ -37,7 +37,7 @@ async def global_exception_handler(request: Request, exc: Exception):
         status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
         content={
             "status": "error",
-            "message": "Something went wrong while processing your request. Please try again or switch to demo mode.",
+            "message": "Something went wrong while processing your request. Please try again or adjust your constraints.",
             "type": exc.__class__.__name__
         }
     )
@@ -54,7 +54,7 @@ def root():
         "tagline": "AI meal planning built around what YOU can safely eat.",
         "version": settings.VERSION,
         "docs": "/docs",
-        "demo_mode": settings.DEMO_MODE
+        "realtime": True
     }
 
 if __name__ == "__main__":

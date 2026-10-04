@@ -5,6 +5,15 @@ from app.database.init_db import init_db
 
 @pytest.fixture(scope="module")
 def client():
+    from app.database.session import SessionLocal
+    from app.models.entities import UserProfile, Allergy, DietaryPreference, PantryItem
+    db = SessionLocal()
+    db.query(Allergy).delete()
+    db.query(DietaryPreference).delete()
+    db.query(PantryItem).delete()
+    db.query(UserProfile).delete()
+    db.commit()
+    db.close()
     init_db()
     with TestClient(app) as c:
         yield c

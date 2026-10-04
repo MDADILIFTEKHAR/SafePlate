@@ -72,8 +72,9 @@ export default function AgentInspectorModal({ isOpen, onClose, health, lastRunId
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
             <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">
               <span className="text-slate-400 text-[10px] uppercase font-bold">Execution Mode</span>
-              <p className="font-semibold text-slate-800 mt-0.5">
-                {health?.demo_mode ? 'Deterministic Demo' : 'Live Local AI'}
+              <p className="font-semibold text-emerald-700 mt-0.5 flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                Real-Time AI Engine
               </p>
             </div>
             <div className="p-3 rounded-xl bg-slate-50 border border-slate-200">

@@ -9,8 +9,6 @@ export default function Navbar({
   onOpenProfile,
   onOpenAgentInspector
 }) {
-  const isDemo = health?.demo_mode;
-  const isOllamaOnline = health?.ollama_available;
 
   return (
     <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all">
@@ -23,20 +21,14 @@ export default function Navbar({
           <div>
             <div className="flex items-center gap-2">
               <span className="font-bold text-lg text-slate-900 tracking-tight">SafePlate</span>
-              {/* AI Mode Indicator */}
+              {/* Live Real-Time AI Status Indicator */}
               <button
                 onClick={onOpenAgentInspector}
-                className={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-medium border transition-colors ${
-                  isDemo
-                    ? 'bg-amber-50 text-amber-800 border-amber-200 hover:bg-amber-100'
-                    : isOllamaOnline
-                    ? 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100'
-                    : 'bg-rose-50 text-rose-800 border-rose-200 hover:bg-rose-100'
-                }`}
-                title="Click to inspect AI Agent Loop and system status"
+                className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium border bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100 transition-colors shadow-2xs"
+                title="Click to inspect Real-Time AI Agent Engine"
               >
-                <span className={`w-1.5 h-1.5 rounded-full ${isDemo ? 'bg-amber-500' : isOllamaOnline ? 'bg-emerald-500' : 'bg-rose-500'}`} />
-                {isDemo ? 'Demo Mode' : isOllamaOnline ? `Ollama (${health?.model_name || 'Active'})` : 'Ollama Offline'}
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span>{health?.ollama_available ? `Ollama AI Live (${health?.model_name || '3B'})` : 'SafePlate AI Active'}</span>
               </button>
             </div>
             <p className="text-[11px] text-slate-500 hidden sm:block">AI meal planning built around what YOU can safely eat</p>

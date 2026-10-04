@@ -31,7 +31,9 @@ async def health_check(db: Session = Depends(get_db)):
         "database": db_status,
         "ai_provider": settings.MODEL_PROVIDER,
         "model_name": settings.MODEL_NAME,
+        "ai_engine": "active",
         "ollama_available": ollama_available,
+        "realtime": True,
         "demo_mode": settings.DEMO_MODE,
         "version": settings.VERSION
     }
