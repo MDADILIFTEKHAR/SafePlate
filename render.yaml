@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: safeplate
+    runtime: python
+    buildCommand: |
+      pip install -r backend/requirements.txt && (which npm > /dev/null 2>&1 && (cd frontend && npm install && npm run build && cd ..) || true)
+    startCommand: cd backend && python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DEMO_MODE
+        value: "false"
+      - key: MODEL_PROVIDER
+        value: "local"
+      - key: DATABASE_URL
+        value: "sqlite:///./safeplate.db"
+      - key: ENVIRONMENT
+        value: "production"
+      - key: CORS_ORIGINS
+        value: "https://safeplate-4.onrender.com"

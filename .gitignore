@@ -33,9 +33,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-dist/
 dist-ssr/
 *.local
+# Keep frontend/dist/ for deployment (un-ignore it)
+!frontend/dist/
 
 # Environment
 .env
